@@ -1,4 +1,7 @@
-Rails.application.routes.draw do
+Bloomitribes::Application.routes.draw do
+  root "pages#home"
+  get "tribus" => "pages#tribus" #creates the Tribus Path
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
